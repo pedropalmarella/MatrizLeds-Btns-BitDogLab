@@ -33,7 +33,7 @@ int main()
     {
         if(!gpio_get(BTN_A) && (!gpio_get(BTN_B))){
 
-            setar_leds_azul(tecla8_frame1, valor_led, pio, sm, r, g, b);
+            /*setar_leds_azul(tecla8_frame1, valor_led, pio, sm, r, g, b);
             sleep_ms(200);
             setar_leds_azul(tecla8_frame2, valor_led, pio, sm, r, g, b);
             sleep_ms(200);
@@ -49,7 +49,33 @@ int main()
             sleep_ms(200);
             setar_leds_azul(tecla8_frame2, valor_led, pio, sm, r, g, b);
             sleep_ms(200);
-            setar_leds_azul(tecla8_frame1, valor_led, pio, sm, r, g, b); 
+            setar_leds_azul(tecla8_frame1, valor_led, pio, sm, r, g, b); */
+            //setar_leds_azul(letra_A, valor_led, pio, sm, r, g, b);
+            //sleep_ms(200);
+            /*setar_leds_azul(letra_O, valor_led, pio, sm, r, g, b);
+            sleep_ms(200);
+            setar_leds_azul(letra_L, valor_led, pio, sm, r, g, b);
+            sleep_ms(200);
+            setar_leds_azul(letra_I, valor_led, pio, sm, r, g, b);
+            sleep_ms(200);
+            setar_leds_azul(letra_V, valor_led, pio, sm, r, g, b);
+            sleep_ms(200);
+            setar_leds_azul(letra_I, valor_led, pio, sm, r, g, b);
+            sleep_ms(200);
+            setar_leds_azul(letra_A, valor_led, pio, sm, r, g, b);
+            sleep_ms(200);*/
+            setar_leds_azul(letra_A, valor_led, pio, sm, r, g, b);
+            sleep_ms(500);
+            setar_leds_azul(letra_M, valor_led, pio, sm, r, g, b);
+            sleep_ms(500);
+            setar_leds_azul(letra_A, valor_led, pio, sm, r, g, b);
+            sleep_ms(500);
+            setar_leds_azul(letra_N, valor_led, pio, sm, r, g, b);
+            sleep_ms(500);
+            setar_leds_azul(letra_D, valor_led, pio, sm, r, g, b);
+            sleep_ms(500);
+            setar_leds_azul(letra_A, valor_led, pio, sm, r, g, b);
+            sleep_ms(500);
         }
         else if(!gpio_get(BTN_A)){
             setar_leds_azul(tecla1_frame1, valor_led, pio, sm, r, g, b);
