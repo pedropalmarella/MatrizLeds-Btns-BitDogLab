@@ -33,13 +33,55 @@ int main()
     {
         if(!gpio_get(BTN_A) && (!gpio_get(BTN_B))){
 
-            setar_leds_todas_cores(tecla1_frame1, valor_led, pio, sm, r, g, b);
+            setar_leds_azul(tecla8_frame1, valor_led, pio, sm, r, g, b);
+            sleep_ms(200);
+            setar_leds_azul(tecla8_frame2, valor_led, pio, sm, r, g, b);
+            sleep_ms(200);
+            setar_leds_azul(tecla8_frame3, valor_led, pio, sm, r, g, b);
+            sleep_ms(200);
+            setar_leds_azul(tecla8_frame4, valor_led, pio, sm, r, g, b);
+            sleep_ms(200);
+            setar_leds_azul(tecla8_frame5, valor_led, pio, sm, r, g, b);
+            sleep_ms(200);
+            setar_leds_azul(tecla8_frame4, valor_led, pio, sm, r, g, b);
+            sleep_ms(200);
+            setar_leds_azul(tecla8_frame3, valor_led, pio, sm, r, g, b);
+            sleep_ms(200);
+            setar_leds_azul(tecla8_frame2, valor_led, pio, sm, r, g, b);
+            sleep_ms(200);
+            setar_leds_azul(tecla8_frame1, valor_led, pio, sm, r, g, b); 
         }
         else if(!gpio_get(BTN_A)){
+            setar_leds_azul(tecla1_frame1, valor_led, pio, sm, r, g, b);
+            sleep_ms(375);
             setar_leds_azul(tecla1_frame2, valor_led, pio, sm, r, g, b);
+            sleep_ms(375);
+            setar_leds_azul(tecla1_frame3, valor_led, pio, sm, r, g, b);
+            sleep_ms(375);
+            setar_leds_azul(tecla1_frame4, valor_led, pio, sm, r, g, b);
+            sleep_ms(375);
+            setar_leds_azul(tecla1_frame5, valor_led, pio, sm, r, g, b);
+            sleep_ms(375);
+            setar_leds_azul(tecla1_frame6, valor_led, pio, sm, r, g, b);
+            sleep_ms(375);
+            setar_leds_azul(tecla1_frame7, valor_led, pio, sm, r, g, b);
+            sleep_ms(375);
+            setar_leds_azul(tecla1_frame4, valor_led, pio, sm, r, g, b);
+            sleep_ms(375);
         }
         else if(!gpio_get(BTN_B)){
-            setar_leds_vermelho(tecla1_frame3, valor_led, pio, sm, r, g, b);
+            setar_leds_vermelho(tecla7_frame1, valor_led, pio, sm, r, g, b);
+            sleep_ms(375);
+            setar_leds_vermelho(tecla7_frame2, valor_led, pio, sm, r, g, b);
+            sleep_ms(375);
+            setar_leds_vermelho(tecla7_frame1, valor_led, pio, sm, r, g, b);
+            sleep_ms(375);
+            setar_leds_vermelho(tecla7_frame2, valor_led, pio, sm, r, g, b);
+            sleep_ms(375);
+            setar_leds_vermelho(tecla7_frame1, valor_led, pio, sm, r, g, b);
+            sleep_ms(375);
+            setar_leds_vermelho(tecla7_frame2, valor_led, pio, sm, r, g, b);
+            sleep_ms(375);
         }
         else if(!gpio_get(JSTICK)){
             reset_usb_boot(0, 0);
